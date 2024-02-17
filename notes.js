@@ -9,6 +9,35 @@ for (var i = ul.children.length; i >= 0; i--) {
     ul.appendChild(ul.children[Math.random() * i | 0]);
 }
 
+function adjustFontSize() {
+    var container = document.getElementById('textContainer');
+    var textContainer = document.getElementById('random');
+    var containerHeight = container.clientHeight;
+    var textHeight = textContainer.clientHeight;
+
+            // Adjust font size based on the text and container height
+    var fontSize = Math.min(containerHeight / textHeight * 16, 40) + 'px';
+            textContainer.style.fontSize = fontSize;
+}
+
+//         // Call the function initially and whenever the content changes
+// adjustFontSize();
+
+//         // You can bind this to any event that triggers content change
+//         // For example, you might want to call it on window resize or input change
+// window.addEventListener('resize', adjustFontSize);
+
+var i = 0;
+var txt = 'Lorem ipsum typing effect!'; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("random").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
 
 const notes = [
 	" 'before we know who we are we fear to lose it.' this is why artists (film writers/poets) are the most important philosophers",
@@ -184,7 +213,109 @@ const notes = [
     "traveling time in the digital dimensions.",
     "non essentialism!!!!",
     "typing of keys in lecture sounds like patter of rainfall ",
-	];
+    " cool art: hasan elahi - thousand little brothers / joiri minaya- #dominicanwomengooglesearch / saya woolfalk - Landscape of Anticipation 2.0",    
+    "i don’t have to tell people anything about my life. i can choose what i share. and sme memories/ situations i’d rather keep to myself. maybe bc i don’t want anyone else misconstruing them with their projection. but maybe because i too can be private.  ",
+    " diogo is woke ",
+    " the rest of the world sees brits how brits see the french ",
+    " i want to feel empathy for happy emotions as often as empathy for bad emotions. to se happy people and feel happy for/with them. it’s much easier and common to feel grief/pain on behalf of others.  ",
+    " insanity is doing the same thing over and over and expecting a different result. — einstein. to chnge reality you must change yourself. change comes from within. change your mindset, change your behavior, etc.  ",
+    " level 6 - radical relativism  ",
+    " everything is a sign if you can read it ",
+    " museum of architecture and technology ",
+    " every thing i feel and every decision i make can be explain by the words: “i’m 23.” i idetify strongly with my age.  ",
+    " the past is caused by the present as the wake of a ship flows back from the prowl ",
+    " in all chaos there is a cosmos, in all disorder a secret order carl jung ",
+    " space is really really nested ",
+    " gia talentino  ",
+    " coincidences exist!!! and frequent coincidences are also logically and statistically possible  ",
+    " the bond between black women and queer people ",
+    " nicki minaj poll will tell me which straight men to trust and which not to ",
+    " rhino tranquilizer????? ",
+    " destiny is to high probability as free will is to any event or action reconcile destiny and free will. both can exist and are not mutually exclusive. example: walking down a staircase— you are choosing where to step, or to jump off the staircase, but the highest likelihood is that you step somewhere on the staircase (destiny).  ",
+    " hyper femme delusional mental illness is the new tumble sad girl aesthetic ",
+    " stuffed animal with a digital soul ",
+    " the nodes in the simulation are decaying. they’re running out!  ",
+    " I feel like i can always tell when someone has been through their shadow and made peace with it. I love her energy. ",
+    " the art of makeup and how it’s not seen as other art forms are because of misogyny  ",
+    " there’s a difference between artistic and creative ",
+    " output versus input (penis vs vagina) ",
+    " i want him to say he’s sorry.  ",
+    " i need a factory setting man - tsione ",
+    " im an onion split in half. others are onions that are peeled layer by layer  ",
+    " mining reality for content  ",
+    " todays selfie is tomorrow’s biometric ",
+    " maybe god is math. and math is random - on meaning and reason and suffering and pleasure ",
+    " she wasn’t here but she was in the realm of digits ",
+    " meeting you was a node ",
+    " fractals are the only absolute universal constant i can think of ",
+    " im not completely worthy. im possibly just lucky.  ",
+    " the moral arch of history trends towards justice ",
+    " dream machine - sober psychedelic experience  ",
+    " animating using instagram story ",
+    " alternative timeline: the iternet allows people to see the worst of themselves— the worst of humanity— and they come to their senses to make sure that shit isn’t tolerated anymore  ",
+    " is it progress or is it a repackaging/ rebranding ? ",
+    " omg read neitchze  ",
+    " big pharma? let’s talk about big derma  ",
+    " embracing my identity as a cool stoner girl who gets her shit done ✅🔮🍃😙 ",
+    " i am not numb. i am at peace.  ",
+    " is it narcissistic to say im wise beyond my years? at the same time i know nothing haha ",
+    " how is my soul in anyway discreet from the cosmic consciousness? is it a specific chunk of that universal energy? when i die and come back, how do i know it’s the same Me coming back? maybe it’s not. maybe it’s really like The Egg. i am everyone and everything, experiencing myself and my depth and my range for a brief moment. ",
+    " im on a walk after an emotional family outburst. i played some music and started crying. at first in pain and sorrow. but then in joy. because for some reason all that emotion reminded me i’m alive. i looked a bit crazy crying and laughing by myself. the duality of the universe is absurdly funny. i love trees. ",
+    " the sky is the interface to the universe  ",
+    " train of consciousness  ",
+    " overcategorization can sometimes lead to self surveillance and removes the genuine earnestness that existed before.  ",
+    " subcultures that start off as being critiques of capitalism are co-opted into being something that promoted capitalism. ",
+    " chilaquiles ",
+    " kpop is a crazy good example of late stage capitalism and consumerism - they’ve gotten to the point where the fans of their content will Do the additional marketing to bring a big company even more revenue while also being tricked into consuming unnecessary things ",
+    " there’s a difference between palatable art and accessible art. i don’t want my art to be overly pretentious or inaccessible to the viewers im trying to persuade. good art communicates ideas at all levels of complexity.  ",
+    " women owe the world beauty. to be a woman is to perform. to be a woman online is to is to live under constant gaze. the eyes in the real world mesh with the lenses of cameras, making the physical and digital inseparable. THE CYBORG IS FEMINIZED. we distort and glitch to be a prettier commodity. alexa, siri, google, our lovely virtual maids in miniskirts.  ",
+    " invention is the mother of necessity ",
+    " look into datamosh effect ",
+    " the past doesn’t exist. the future doesn’t exist. the only thing that exists and will EVER exist is right now. this present moment. you are not moving from this moment. you are not going towards the future. the future is coming to you. all you have to do is be present and do the best you can do RIGHT NOW.  ",
+    " thoughts or okay to think. actions are okay to act. you don’t have to execute authenticity. you can just be without thinking. don’t get in your head about your own authenticity. just be. ",
+    " who could you Not fall in love with?  ",
+    " never look back 😀✌️ ",
+    " the discovery of innocence is its loss - neri oxman ",
+    " when you post a picture together (on the ig grid) that’s your relationship’s IPO ",
+    " i don’t care about white people’s art ",
+    " worlds “digital dump” in ghana ",
+    " metaphors are a building block of the universe for all that exists is patterns and fractals.  ",
+    " good tragedy is inevitable. ",
+    " babel image archives — stable diffusion ",
+    " daft punk — interstella 5555 - music video movie",
+    " AR as experimental art rather than technological goal ",
+    " frutiger aero ",
+    " wish them love ",
+    " “drums and beats” —lydia ",
+    " music is math that you can feel  ",
+    " the color of pomegranates 1969 ",
+    " there are no regrets. just lessons. :) ",
+    " i am tulsi and i graduate from yale in a few days. i have no plans for after grad but i will eventually make a living doing something creative and live in a city i love. i will also find love and deeper friendship. tbiytb ",
+    " tulsi’s personality is what i would have been if i wasn’t bullied out of it ",
+    " a crush is just a lack of information ",
+    " he put his whole wong kar wussy into that ",
+    " moonbug pandemic ",
+    " sorting algorithms !!! quantm bogosort ",
+    " my friends are nanoinfluencers ",
+    " teal tulips ",
+    " the camera model contains the essence of time ",
+    " evan is in shock that i just said “anaheim lakers” - “i don’t even know what to say. i don’t know how to move on from this.” ",
+    " the tardis is not euclidean ",
+    " i know what i look like pixelated. what do i look like enhanced? fractal of resolution— can i be enhanced past my physical resolution? - 2d pixel to 3d pixel to curve ",
+    " susan sontag - All photographs are memento mori. To take a photograph is to participate in another person’s (or thing’s) mortality, vulnerability, mutability. Precisely by slicing out this moment and freezing it, all photographs testify to time’s relentless melt.",
+	"  i am in my flop era ",
+    "  you are no longer driven to KILL CONSUME MULTIPLY CONQUER by your own nature, go forth and do <everything else> till the end of all ages !!! ✨✨✨ from: “the goddess of everything else” ",
+    "  experiment in which an AI is trained by females and then a separate AI is trained by males but they both have the same task. wonder what (if any) differences that would produce.  ",
+    "  an acceptance of the inauthentic— how does this hurt us? ",
+    "  simulacra iterates away from reality until it is completely unrelated to the real, whereas hegel’s dialectic iterates in hopes of converging to a truth about reality  ",
+    "  rulial space— stephen wolfram - computationally generated possibilities - computational irreducibility - https://www.youtube.com/watch?v=fLMZAHyrpyo ",
+    "  child labor laws — we think of industrialism... but in the age of culture production, should children’s contribution not be considered labor?// for ex. influencers, kpop trainees, children who divert from school to pursue entertainment/talent/ media  ",
+    "  what our individual consciousness is physically attached to is up for debate— this means it is not necessarily our body it’s attached to. for example, it may be attached to the brain, which happens to live in the body. under this logic, the physical self is malleable, extendable, and shrinkable. my “body” can encompass the totality of a machine, for example when i am driving a car. cyborg.  ",
+    "  authenticity is no longer real — it’s hyperreal  ",
+    "  performance is the new authenticity (in hyperreality) ",
+    "  trends are a dialectic ",
+    "  our relationship with the book (mina le) ",
+    ]
 
 
 const button = document.getElementById("myButton");

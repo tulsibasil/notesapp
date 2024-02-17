@@ -3,9 +3,16 @@ p{
 	font-size: 18px;
 }
 
+
 .notes{
 	margin-right: 2vw;
+  font-family: 'Courier New', monospace;
+  color: whitesmoke;
 }
+
+/*@keyframes jitter {
+
+}*/
 
 
 .container{
@@ -13,24 +20,53 @@ p{
   font-family: "arial";
   margin-right: 2vw;
   margin-left: 2vw;
+  height: 40vw;
 }
+
+#textcontainer{
+  height: 40vw;
+}
+
 
 #random{
 	margin-right: 2vw;
   margin-left: 2vw;
-	display: inline-block;
-/*  overflow: scroll;*/
-/*  white-space: nowrap;*/
+	display: flex;
   font-size: 50px;
-  width: 0;
-  animation: typing;
-  animation-duration: 3s;
-  animation-timing-function: steps(30, end);
-  animation-fill-mode: forwards;
+  width: 100%;
+  font-family: Open Sans, sans-serif;
+
 }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+#myButton{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  top: 1vw;
+  left: 1vw;
+  position: fixed;
+}
+
+#myButton:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 1vw;
+  left: 1vw;
+}
+
+@media (min-width: 768px) {
+  .#myButton{
+    padding: 0.25em 0.75em;
+  }
 }
 
